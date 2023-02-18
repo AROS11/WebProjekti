@@ -1,16 +1,4 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <link rel="stylesheet" href="CSS/style.css">
- </head>
- <body>
-  
- 
+<?php include 'components/header.php' ?>   
     <div class="main-about">
         <div class="div-majt-about">
             
@@ -21,11 +9,11 @@
               </div>
               
               <div class="divtextt">
-                <p>Ne jemi nje kompani qe dizajnojme ilustrimin tuaj te preferuar ne mbadhjet e tuaja. </p>
+                <p>Ne jemi nje kompani qe dizajnojme ilustrimin tend te preferuar ne mbadhjet e tuaja. </p>
               </div>
 
               <div class="divMbuttonii">
-                <a href="product.html">Porosit tani </a>
+                <a href="product.php">Porosit tani </a>
               </div>
 
             </div>
@@ -39,8 +27,8 @@
     </div>
     <div class="mainposht-home">
         <div class="divnalt-home">
-          <h2>Rreth Nesh</h2>
-          <p>Ne jemi nje kompani e cila bejme costumize patiket tuaja, ne jemi nje ekip mjaft kreativ, dhe mundohemi qe idete e juaja t'i paraqesim ne patiket tuaja. :)</p>
+          <h2>Cfare bejme ne</h2>
+          <p>Ne jemi nje kompani e cila bejme costumize patiket tuaja, ne jemi nje ekip mjaft kreative, dhe mundohemi qe ideat tuaja ti paraqesim ne patiket tuaja. :)</p>
         </div>
         
         <div class="divposht-home">
@@ -66,13 +54,9 @@
         <div class="mainimaposht-home">
           <h3>Ekipi jone</h3>
           <ul>
-            <li><h4>Artani</h4></li>
+            <li><img src="images/idphoto.jpeg" ><h4>Altina</h4></li>
             <h1></h1>
-            <li><h4>Ylli</h4></li>
+            <li><img src="images/idphoto.jpeg" ><h4>Aurela</h4></li>
           </ul>
     </div>
-
-
-  </body>
-  </html>
-   
+    <?php include 'components/footer.php' ?>   
