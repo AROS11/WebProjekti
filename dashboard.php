@@ -1,6 +1,7 @@
 <?php include 'components/header.php';
 include_once 'logic/UserMapper.php';
 
+
 $mapper = new UserMapper();
 $clients = $mapper->getAllUsers();
 if(isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] == 1) {

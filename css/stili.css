@@ -771,7 +771,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 550px;
 }
 .tablla{
   width: 50%;
@@ -1054,3 +1054,5 @@ margin-top: 50px;
     margin-left: 20%;
   }
 }
+
+

@@ -24,6 +24,9 @@ session_start();
         <li><a href="product.php">Product</a></li>
         <li><a href="aboutus.php">About Us</a></li>
         <?php if(isset($_SESSION['is_logged_in']) && $_SESSION['role']==1){?>
+          <li><a href="dashboardproduct.php">Dashboard Produkt</a></li>
+        <?php } ?>
+        <?php if(isset($_SESSION['is_logged_in']) && $_SESSION['role']==1){?>
           <li><a href="dashboard.php">Dashboard</a></li>
         <?php } ?>
         

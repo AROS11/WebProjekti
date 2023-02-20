@@ -13,9 +13,9 @@ CREATE TABLE `klientat` (
 
 INSERT INTO `klientat` (`id`, `emri`, `mbiemri`, `username`, `passwordi`, `role`) VALUES
 (31, 'Admin', 'Admin', 'admin99', '000000', 1),
-(33, 'Ramiz', 'Hoxha', 'ramizbmw', '123456', 0),
-(34, 'Arber', 'Kadriu', 'arbermonitorues', '222222', 0),
-(35, 'Shkelqim', 'Salihu', 'shkelqababa', '444444', 0);
+(33, 'Ramiz', 'Hoxha', 'ramizhoxha1', '123456', 0),
+(34, 'Artan', 'Osmani', 'artan11', '222222', 0),
+(35, 'Yll', 'Smakiqi', 'yllsmakiqi2', '444444', 0);
 
 -- --------------------------------------------------------
 

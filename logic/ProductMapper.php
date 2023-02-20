@@ -15,6 +15,7 @@ class ProductMapper extends DatabaseConfig{
         values (:emri, :cmimi, :foto)";
 
         $statement = $this->connection->prepare($this->query);
+        
         $emri = $product->getEmri();
         $cmimi = $product->getCmimi();
         $foto = $product->getFoto();
@@ -41,5 +42,12 @@ class ProductMapper extends DatabaseConfig{
         $result = $statement->fetch(PDO::FETCH_ASSOC);
         return $result;
     }
+    public function deleteProduct($pid){
+        $this->query = "DELETE FROM produktet WHERE product_id=:id";
+        $statement = $this->connection->prepare($this->query);
+        $statement->bindParam(":id", $pid);
+        $statement->execute();
+    }
+    
     
 }
