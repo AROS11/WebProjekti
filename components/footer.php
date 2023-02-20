@@ -6,11 +6,11 @@
       
       <div class="footeridy">
       <ul>
-            <li><a href="#"><img src="images/instalogo.png"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/instalogo.png"></a></li>
             <h1></h1>
-            <li><a href="#"><img src="images/facebooklogo.png"></a></li>
+            <li><a href="https://www.facebook.com/"><img src="images/facebooklogo.png"></a></li>
             <h1></h1>
-            <li><a href="#"><img src="images/twitterlogo.png"></a></li>
+            <li><a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png"></a></li>
           </ul>
       </div>
     </div>
