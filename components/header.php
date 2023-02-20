@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIN CUSTOMS</title>
     <link rel="icon" href="images/Tinicon.png">
-    <link rel="stylesheet" href="CSS/stili.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="js/login.js"type="text/javascript"></script>
     <script src="js/script.js"></script>
     

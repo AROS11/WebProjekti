@@ -23,10 +23,3 @@ function showSlides(n){
     }
     slides[slideIndex-1].style.display = "block";
 }
-
-
-
-var images = ['images/dragonballzi.jpeg', 'images/syteenarutos.jpeg', 'images/jokeri.jpeg'];
-var index = 0;
-var time=4000;
-
