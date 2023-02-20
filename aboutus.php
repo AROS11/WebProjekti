@@ -54,9 +54,9 @@
         <div class="mainimaposht-home">
           <h3>Ekipi jone</h3>
           <ul>
-            <li><img src="images/idphoto.jpeg" ><h4>Altina</h4></li>
+            <li><h4>Artani</h4></li>
             <h1></h1>
-            <li><img src="images/idphoto.jpeg" ><h4>Aurela</h4></li>
+            <li><h4>Ylli</h4></li>
           </ul>
     </div>
     <?php include 'components/footer.php' ?>   
