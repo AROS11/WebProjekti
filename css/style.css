@@ -388,7 +388,7 @@
   
   /*======logini======*/
   .form-style {
-    height: 350px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -771,7 +771,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 500px;
 }
 .tablla{
   width: 50%;
@@ -990,7 +990,7 @@ margin-top: 50px;
 
 
 
-@media only screen and (max-width:425px){
+/* @media only screen and (max-width:425px){
   .header{
     flex-direction: column;
     align-items: center;
@@ -1053,6 +1053,151 @@ margin-top: 50px;
   .footeridy ul{
     margin-left: 20%;
   }
+} */
+
+
+
+
+@media (max-width: 414px) {
+  .headerList {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header img {
+    width: 30%;
+  }
+  .main-home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-majt-home {
+    width: 100%;
+  }
+  .divMajtKontenti {
+    flex-direction: column;
+    align-items: center;
+  }
+  .divfoto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #divMajtFoto {
+    width: 60%;
+  }
+  .divtext {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .divMbuttoni {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .djathkontenti {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide {
+    display: none;
+  }
+  .slide:first-child {
+    display: block;
+  }
+  .prev,
+  .next {
+    display: none;
+  }
+  .dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .dot {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .footer-blloku {
+    width: 100%;
+    text-align: center;
+  }
+  .footeridy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .footeridy ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .footeridy li {
+    margin: 0 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================Dashboard Produktet=================*/
+.produktet{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+.tablla{
+  width: 50%;
+  border:1px rgba(128, 128, 128, 0.5) solid;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.tablla th {
+  text-align: center;
+  height: 30px;
+  width: 20%;
+  border: 2px rgba(128, 128, 128, 0.5) solid;
+}
+.tablla td {
+  text-align: center;
+  height: 30px;
+  width: 20%;
+  border: 2px rgba(128, 128, 128, 0.5) solid;
+ text-decoration: none;
+}
+.tablla td a{
+ text-decoration: none;
+ font-family: Arial, Helvetica, sans-serif;
+ color: red;
+ font-weight:bold;
 }
 
 
