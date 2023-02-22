@@ -24,6 +24,8 @@ console.log("password "+passwordValue);
 
 
 
+
+
 function validateRegistration() {
   const emri = document.querySelector("input[name='register-emri']").value;
   const mbiemri = document.querySelector("input[name='register-mbiemri']").value;
@@ -42,6 +44,13 @@ function validateRegistration() {
   const isUsernameValid = usernameRegex.test(username);
   const isPasswordValid = passwordRegex.test(password);
 
+
+
+  // Check if any field is empty
+ if (!emri || !mbiemri || !username || !password) {
+  alert("Please fill out all fields.");
+  return false;
+}
   if (!isEmriValid) {
     alert("Please enter a valid first name (3-30 letters, no numbers or special characters).");
     return false;
@@ -57,24 +66,14 @@ function validateRegistration() {
   if (!isPasswordValid) {
     alert("Please enter a valid password (at least 8 characters, one uppercase letter, one lowercase letter, and one number).");
     return false;
+  }else{
+    
+  // If all fields are valid, return true to submit the form
+    alert("You have been sucessfully registered,now you can log in!! ");
+    return true;
   }
 
-  // If all fields are valid, return true to submit the form
-  return true;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -18,7 +18,7 @@ session_start();
 
   <body>
     <div class="header">
-      <img src="images/logo.png"/>
+    <img src="images/logo.png" />
       <ul class="headerList">
         <li><a href="home.php">Home</a></li>
         <li><a href="product.php">Product</a></li>
