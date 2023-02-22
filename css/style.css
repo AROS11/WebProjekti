@@ -988,79 +988,13 @@ margin-top: 50px;
 
 
 
+/*====================RESPONSIVE=================*/
 
 
-/* @media only screen and (max-width:425px){
-  .header{
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .header>img{
-    width: 50%;
-  }
-  .headerList li {
-    justify-content: center;
-  }
-  
-  .main-home {
-    height: 300px;
-    flex-direction: column;
-  }
-  .div-majt-home{
-    height: 300px;
-    width: 100%;
-  }
-  .div-djatht-home{
-    height: 300px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  #divMajtFoto{
-    width: 60%;
-  }
-  .divtext {
-    margin-left: 0%;
-  }
-  .divtext p {
-    font-size:medium;
-    margin-inline-end: 0px;
-  }
-  .divfoto{
-    margin-left: 10%;
-  }
-  .divMbuttoni{
-    width: 30%;
-    margin-left: 35%;
-  }
-  .djathkontenti >img{
-    width: 65%;
-    margin-left: 0%;
-  }
-  #footer{
-    min-height: 70px;
-  }
-  .footer-main{
-    height: 70px;
-  }
-  .footer-blloku p {
-    font-size:small;
-    width: 100%;
-  }
-  .footeridy ul{
-    margin-left: 20%;
-  }
-} */
-
-
-
-
-@media (max-width: 414px) {
+ @media (max-width: 414px) {
   .headerList {
-    display: none;
+    display: all;
+    align-items: center;
   }
   .header {
     display: flex;
@@ -1068,15 +1002,16 @@ margin-top: 50px;
     align-items: center;
   }
   .header img {
-    width: 30%;
+    width: 90%;
   }
   .main-home {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+ 
   .div-majt-home {
-    width: 100%;
+    width: 90%;
   }
   .divMajtKontenti {
     flex-direction: column;
@@ -1108,14 +1043,14 @@ margin-top: 50px;
     align-items: center;
   }
   .slide {
-    display: none;
+    display: all;
   }
   .slide:first-child {
-    display: block;
+    display: show;
   }
   .prev,
   .next {
-    display: none;
+    display: show;
   }
   .dots {
     width: 100%;
@@ -1127,14 +1062,14 @@ margin-top: 50px;
     margin: 0 5px;
   }
   .footer-blloku {
-    width: 100%;
+    width: 50%;
     text-align: center;
   }
   .footeridy {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 50px;
   }
   .footeridy ul {
     display: flex;
@@ -1142,6 +1077,10 @@ margin-top: 50px;
     align-items: center;
     margin: 0;
   }
+  
+.footer-blloku p{
+  font-size: large;
+}
   .footeridy li {
     margin: 0 5px;
   }
@@ -1149,24 +1088,7 @@ margin-top: 50px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 /*====================Dashboard Produktet=================*/
 .produktet{
   display: flex;
