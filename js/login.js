@@ -1,74 +1,4 @@
 
-// function validate(number){
-//   console.log("Hyn ne funksion funksion");
-//   if(number == 0){
-//     var usernameValue = inputElements[0].value;
-//     var passwordValue = inputElements[1].value;
-//     console.log(inputElements);
-//     console.log("username: "+usernameValue);
-//     console.log("password: "+passwordValue);
-//     if(usernameValue == "" || passwordValue == ""){
-//       alert("Mbushini te gjitha hapsirat!");
-//     }
-//     else{
-//       alert("Kycja u krye me sukses.");
-//     }
-//   }
-//   else if(number == 1){
-//     var nameValue = inputElements[3].value;
-//     var lastNameValue = inputElements[4].value;
-//     var usernameRegValue = inputElements[5].value;
-//     var passwordRegValue = inputElements[6].value;
-//     console.log(inputElements);
-//     console.log("name "+nameValue);
-//     console.log("lastName "+lastNameValue);
-//     console.log("usernameReg "+usernameRegValue);
-//     console.log("passwordReg "+passwordRegValue);
-//     if(nameValue == "" || lastNameValue == "" || usernameRegValue=="" || passwordRegValue == ""){
-//       alert("Mbushini te gjitha hapsirat!");
-//     }
-//     else{
-//       alert("Regjistrimi u krye me sukses.");
-//     }
-//   }
-// }
-
-// function changeForm(number){
-//   var format = document.getElementsByClassName('forms');
-//   if(number == 0){
-//     format[0].classList.remove("hidden");
-//     format[0].classList.add("form-style");
-//     format[1].classList.add("hidden");
-//     format[1].classList.remove("form-style");
-//   }
-//   else if(number == 1){
-//     format[1].classList.remove("hidden");
-//     format[1].classList.add("form-style");
-//     format[0].classList.add("hidden");
-//     format[0].classList.remove("form-style");
-//   }
-// }
-
-// var inputElements = document.getElementsByClassName("input");
-// var usernameValue = inputElements[0].value;
-// var passwordValue = inputElements[1].value;
-// console.log(inputElements);
-// console.log("username "+usernameValue);
-// console.log("password "+passwordValue);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function changeForm(number){
   var format = document.getElementsByClassName('forms');
   if(number == 0){
@@ -93,62 +23,59 @@ console.log("username "+usernameValue);
 console.log("password "+passwordValue);
 
 
-function regex(){
-  var /* EMRI*/firstnameRegex=/^[A-Z]{1}[a-z]{2,20}$/
-  var firstname = document.getElementById('emri').value;
 
-  
-  var /* Mbiemri*/usernameRegex=/^[A-Z]{1}[a-z]{2,20}$/
-  var username = document.getElementById('mbiemri').value;
+function validateRegistration() {
+  const emri = document.querySelector("input[name='register-emri']").value;
+  const mbiemri = document.querySelector("input[name='register-mbiemri']").value;
+  const username = document.querySelector("input[name='register-username']").value;
+  const password = document.querySelector("input[name='register-passwordi']").value;
 
-   var /* email*/emailRegex=/^[a-zA-Z0-9]+@[a-zA-Z.-]+\.[com|net]{2,6}$/
-   var email = document.getElementById('usernamei').value;
+  // Define the regular expressions for each field
+  const emriRegex = /^[a-zA-Z]{3,30}$/;
+  const mbiemriRegex = /^[a-zA-Z]{3,30}$/;
+  const usernameRegex = /^[a-zA-Z0-9._-]{3,20}$/;
+  const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
 
-   var /* Password*/passwordRegex=/^[A-Z]{1}[a-z]{1,}[0-9]{1,4}$/
-   var password = document.getElementById('passwordi').value;
-   if(firstnameRegex.test(firstname)){
-    console.log("Emri eshte ne rregull!");
-  }else{
-    alert("Emri nuk eshte ne rregull!");
+  // Check if each field matches its respective regex
+  const isEmriValid = emriRegex.test(emri);
+  const isMbiemriValid = mbiemriRegex.test(mbiemri);
+  const isUsernameValid = usernameRegex.test(username);
+  const isPasswordValid = passwordRegex.test(password);
+
+  if (!isEmriValid) {
+    alert("Please enter a valid first name (3-30 letters, no numbers or special characters).");
+    return false;
   }
-  if(usernameRegex.test(username)){
-    console.log("Mbiemri  eshte ne rregull!");
-  }else{
-    alert("Mbiemri nuk eshte ne rregull!");
+  if (!isMbiemriValid) {
+    alert("Please enter a valid last name (3-30 letters, no numbers or special characters).");
+    return false;
   }
-  
-  if(emailRegex.test(email)){
-    console.log("Email eshte ne rregull!");
-  }else{
-    alert("Email nuk eshte ne rregull!");
+  if (!isUsernameValid) {
+    alert("Please enter a valid username (3-20 letters, numbers, periods, dashes, and underscores only).");
+    return false;
   }
-  if(passwordRegex.test(password)){
-    console.log("Password eshte ne rregull!");
-  }else{
-    alert("Password nuk eshte ne rregull!");
+  if (!isPasswordValid) {
+    alert("Please enter a valid password (at least 8 characters, one uppercase letter, one lowercase letter, and one number).");
+    return false;
   }
-  if(passwordRegex.test(password) && emailRegex.test(email) && usernameRegex.test(username) && firstnameRegex.test(firstname) ){
-    alert("Kyçja u krye me sukses!");
-  }
+
+  // If all fields are valid, return true to submit the form
+  return true;
 }
-function logini(){
-  var emaili=/^[a-zA-Z0-9]+@[a-zA-Z.-]+\.[com|net]{2,6}$/
-  var emailli = document.getElementById('useri').value;
 
-  var passwordi=/^[A-Z]{1}[a-z]{1,}[0-9]{1,5}$/
-  var passworddi = document.getElementById('pasi').value;
 
-  if(emaili.test(emailli)){
-   console.log("Email eshte ne rregull!");
-  }else{
-    alert("Email nuk eshte ne rregull!");
-  }
-  if(passwordi.test(passworddi)){
-    console.log("Password eshte ne rregull!");
-  }else{
-    alert("Password nuk eshte ne rregull!");
-  }
-  if(emaili.test(emailli) & passwordi.test(passworddi)){
-    alert("Kyçja u krye me sukses!");
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -37,7 +37,9 @@
             <h3>Password</h3>
             <input type="password" class="input" name="register-passwordi" placeholder="Password..."/>
           
-            <input id="submit" name="register-btn" type="submit" class="input submit" value="Register" onclick="validate(1)" />
+            
+            <input id="submit" name="register-btn" type="submit" class="input submit" value="Register" onclick="return validateRegistration();" />
+
           </div>
         </form>
       </div>
