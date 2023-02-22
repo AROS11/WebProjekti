@@ -11,7 +11,7 @@
         
         <form method="POST" action="logic/auth.php" id="mainForm">
          <div class="login forms form-style">
-           <h1>-Kycuni ne logarin tuaj-</h1>
+           <h1>-Kycuni ne llogarin tuaj-</h1>
           
             <h3>Username</h3>
             <input type="text" id="username" name="username" class="input" placeholder="Username..." />
