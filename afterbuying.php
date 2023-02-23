@@ -20,7 +20,7 @@
                 <div class="nesepo">
                     <h1> <?= $product['emriprod']?></h1>
                     <h3>Cmimi:<?= $product['cmimiprod']?>.00$</h3>
-                    <a href="#">Porosit Tani</a>
+                    <a href="https://www.instagram.com/tincustoms/?hl=en">Porosit Tani</a>
                 </div>
             </div>
         <?php }  else { ?>
