@@ -6,7 +6,7 @@
       
       <div class="footeridy">
       <ul>
-            <li><a href="https://www.instagram.com/"><img src="images/instalogo.png"></a></li>
+            <li><a href="https://www.instagram.com/tincustoms/?hl=en"><img src="images/instalogo.png"></a></li>
             <h1></h1>
             <li><a href="https://www.facebook.com/"><img src="images/facebooklogo.png"></a></li>
             <h1></h1>
